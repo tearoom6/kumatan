@@ -12,6 +12,10 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+If you don't customise the app, you can easily deploy to Heroku here.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ### Running kumatan Locally
 
 You can test your hubot by running the following, however some plugins will not

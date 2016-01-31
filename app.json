@@ -1,0 +1,49 @@
+{
+  "name": "KumatanBot",
+  "description": "Kumatan is our friend.",
+  "keywords": [
+    "Hubot",
+    "Slack",
+    "Kumatan"
+  ],
+  "repository": "https://github.com/tearoom6/kumatan",
+  "logo": "https://raw.githubusercontent.com/tearoom6/kumatan/master/logo.png",
+  "env": {
+    "HUBOT_HEROKU_KEEPALIVE_INTERVAL": {
+      "description": "hubot-heroku-keepalive interval.",
+      "value": "5"
+    },
+    "HUBOT_HEROKU_KEEPALIVE_URL": {
+      "description": "hubot-heroku-keepalive URL.",
+      "value": "https://kumatan.herokuapp.com/"
+    },
+    "HUBOT_HEROKU_SLEEP_TIME": {
+      "description": "Kumatan gets asleep in this time.",
+      "value": "22:00"
+    },
+    "HUBOT_HEROKU_WAKEUP_TIME": {
+      "description": "Kumatan wakes up in this time.",
+      "value": "6:00"
+    },
+    "HUBOT_SLACK_TOKEN": {
+      "description": "Slack Token.",
+      "value": ""
+    },
+    "REDIS_URL": {
+      "description": "Redis URL. (redis://...)",
+      "value": ""
+    },
+    "LANG": {
+      "description": "Language.",
+      "value": "ja_JP.UTF-8"
+    },
+    "TZ": {
+      "description": "Timezone.",
+      "value": "Asia/Tokyo"
+    }
+  },
+  "addons": [
+    "heroku-redis:hobby-dev",
+    "scheduler:standard"
+  ]
+}
