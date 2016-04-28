@@ -7,10 +7,10 @@
 # Author:
 #   tearoom6
 #
-{LineTextAction} = require 'hubot-line'
+{LineRawMessageListener, LineTextAction} = require 'hubot-line'
 
 module.exports = (robot) ->
-  robot.respond /(.*)/i, (res) ->
+  robot.listeners.push new LineRawMessageListener robot, (() -> true), (res) ->
     phrase = encodeURIComponent res.match[0]
     replies = ['うん？', 'なんか言った？？', '気分がいいね！', 'わーい！！', 'やったね！']
     res.emote new LineTextAction res.random replies
